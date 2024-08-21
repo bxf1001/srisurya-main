@@ -433,3 +433,59 @@ footer {
 .logout-button:hover {
     background-color: #d32f97;
 }
+/* Existing desktop styles here */
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    .hero {
+      height: auto;
+      padding: 2rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .tagline {
+      font-size: 1.2rem;
+    }
+  
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-form, .contact-info {
+      width: 100%;
+    }
+  
+    body {
+      font-size: 16px;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.5em;
+    }
+  
+    .about-us, .history, .contact-page {
+      padding: 2rem 1rem;
+    }
+  }
+  
