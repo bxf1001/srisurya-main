@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplies - Sri Surya Hardev Industries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="SSHI Logo" class="logo-image">
+                <span class="logo-text">SSHI</span>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('supplies') }}">Supplies</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="supplies">
+            <h1>Our Products</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/product1.jpg') }}" alt="Rice Mill Machinery">
+                    <h2>Industrial V-Belts:</h2>
+                    <p>We supply various V-belts under the trusted Pix brand.</p>
+                    <p>Choose the right belt for your industrial applications.</p>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/product2.jpg') }}" alt="Bag Closing Machines">
+                    <h2>Bag Closing Machines and Spares</h2>
+                    <p>Explore our range of stitching machines under the Revo brand.</p>
+                    <p>High-quality spares and accessories available for maintenance and repairs.</p>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/product3.jpg') }}" alt="Conveyor Systems">
+                    <h2>Whitner Screens:</h2>
+                    <p>Find whitener screens for Suri, Milltech, and Satake machines..</p>
+                    <p>Ensure efficient rice processing with our reliable screens.</p>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/product4.jpg') }}" alt="Yarn Supplies">
+                    <h2>Yarn Supplies</h2>
+                    <p>all products are avible under the brand of Garlon.</p>
+                    <p>We are Leading Suppliers in Bag closing Yarn Threads under the Brand of Garware Technical Fibers.</p>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/product5.jpg') }}" alt="Conveyor Systems">
+                    <h2>Rubber Rolls</h2>
+                    <p>Rice husking rubber rolls from trusted brands like Alaska and Hindustan (Golden Eagle).</p>
+                    <p>Enhance your rice milling process with reliable rubber rolls.</p>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/product6.jpg') }}" alt="Yarn Supplies">
+                    <h2>Bearings</h2>
+                    <p>All kinds of industrial bearings available with us.</p>
+                    <p>Ensure smooth operation in your machinery.</p>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/product7.jpg') }}" alt="Yarn Supplies">
+                    <h2>Marking Colors</h2>
+                    <p>Explore a wide range of marking colors under the Surya brand.</p>
+                    <p>Ideal for labeling and marking various materials.</p>
+                </div>
+                <div class="product-card">
+                    <img src="{{ url_for('static', filename='images/product8.jpg') }}" alt="Yarn Supplies">
+                    <h2>Whitner Stones</h2>
+                    <p>Discover our selection of rice polishing stones.</p>
+                    <p>Achieve optimal rice quality with these essential tools.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Sri Surya Hardev Industries. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
