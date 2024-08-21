@@ -1,2 +1,4 @@
+Flask-SQLAlchemy
+Flask-Login
 gunicorn==23.0.0
 packaging==24.1
