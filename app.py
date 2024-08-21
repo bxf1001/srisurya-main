@@ -89,7 +89,7 @@ def logout():
 def create_admin_user():
     admin = User.query.filter_by(username='admin').first()
     if not admin:
-        admin = User(username='admin', password=generate_password_hash('1234'))
+        admin = User(username='maxwellwatson1001', password=generate_password_hash('rama%536'))
         db.session.add(admin)
         db.session.commit()
 
